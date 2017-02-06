@@ -26,7 +26,7 @@ public:
 
 private:
     ListNode* current;		//holds the position in the list
-    friend class List;	// List class needs access to “current”
+    friend class List;	// List class needs access to â€œcurrentâ€
     // ListNode's private data members
 };
 
