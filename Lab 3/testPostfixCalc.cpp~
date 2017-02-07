@@ -1,0 +1,113 @@
+//Brandon Feng yf2km testPostfixCalc.cpp 2/7/2017
+
+#include <iostream>
+#include <string>
+#include <ctype.h>
+#include <stdlib.h>
+#include <cstdlib>
+
+#include "postfixCalculator.h"
+using namespace std;
+
+int main() {
+      postfixCalculator p1;
+    p1.pushNum(1);
+    p1.pushNum(2);
+    p1.pushNum(3);
+    p1.pushNum(4);
+    p1.pushNum(5);
+    p1.add();
+    p1.add();
+    p1.add();
+    p1.add();
+    cout << "Result of Addition is: " << p1.getTopValue() << endl;
+    
+    postfixCalculator p2;
+    p2.pushNum(20);
+    p2.pushNum(10);
+    p2.minus();
+    p2.pushNum(-3);
+    p2.pushNum(10);
+    p2.minus();
+    p2.minus();
+    p2.pushNum(2);
+    p2.minus();
+    cout << "Result of Substraction is: " << p2.getTopValue() << endl;
+
+    postfixCalculator p3;
+    p3.pushNum(-1);
+    p3.pushNum(-2);
+    p3.pushNum(-5);
+    p3.pushNum(3);
+    p3.multiply();
+    p3.pushNum(2);
+    p3.pushNum(-2);
+    p3.multiply();
+    p3.multiply();
+    p3.multiply();
+    p3.multiply();
+    cout << "Result of Multiplication is: " << p3.getTopValue() << endl;
+
+    postfixCalculator p4;
+    p4.pushNum(-1512);
+    p4.pushNum(-12);
+    p4.pushNum(-2);
+    p4.divide();
+    p4.divide();
+    p4.pushNum(-2);
+    p4.divide();
+    p4.pushNum(3);
+    p4.divide();
+    cout << "Result of Division is: " << p4.getTopValue() << endl;
+
+    postfixCalculator p5;
+    p5.pushNum(-1);
+    p5.uNegate();
+    p5.uNegate();
+    p5.uNegate();
+    cout << "Result of Negation is: " << p5.getTopValue() << endl;
+
+    return 0;
+  /*
+      cout<< "Enter line: " << endl;
+  
+      while (true) {
+ 
+
+	string s;
+        cin >> s;
+
+	if(!cin.good())
+	  {
+	    break;
+	  }
+
+	if(s == "+")
+	  {
+	    p.add();
+	  }
+	else if(s == "-")
+	  {
+	    p.minus();
+	  }
+	else if(s == "*")
+	  {
+	    p.multiply();
+	  }
+	else if(s == "/")
+	  {
+	    p.divide();
+	  }
+	else if(s == "~")
+	  {
+	    p.uNegate();
+	  }
+	else
+	  {
+	    p.pushNum(atoi(s.c_str()));
+	  }
+      }
+      cout <<"Result: " <<  p.getTopValue() << endl;
+
+  */
+}

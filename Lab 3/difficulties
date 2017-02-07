@@ -1,0 +1,2 @@
+I was having trouble compiling the stack.cpp file.
+Later I realized I need to also compile the List.cpp, ListNode.cpp and ListItr.cpp that I used in writing the stack.cpp file for it to properly compile.
