@@ -1,4 +1,4 @@
-// Brandon Feng yf2km 2/1/2017 List.h
+// Brandon Feng yf2km 1/30/2017 List.h
 /*
  * Filename: List.h
  * Description: List class definition

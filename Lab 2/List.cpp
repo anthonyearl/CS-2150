@@ -1,11 +1,11 @@
-// Brandon Feng yf2km 2/1/2017 List.cpp
+// Brandon Feng yf2km 1/30/2017 List.cpp
 #include "List.h"
 using namespace std;
 
 List::List()
 {
-  head = new ListNode();
-  tail = new ListNode();
+  head = new ListNode;
+  tail = new ListNode;
   (*head).previous = NULL;
   (*head).next = tail;
   (*tail).previous = head;
@@ -16,8 +16,8 @@ List::List()
 
 List::List(const List& source)
 {
-  head = new ListNode();
-  tail = new ListNode();
+  head = new ListNode;
+  tail = new ListNode;
   (*head).previous = NULL;
   (*head).next = tail;
   (*tail).previous = head;
@@ -94,7 +94,7 @@ ListItr List::last()
 
 void List::insertAfter(int x, ListItr position)
 {
-  ListNode *l = new ListNode();
+  ListNode *l = new ListNode;
   (*l).value = x;
   (*l).previous = position.current;
   (*l).next = position.current->next;
@@ -107,7 +107,7 @@ void List::insertAfter(int x, ListItr position)
 
 void List::insertBefore(int x, ListItr position)
 {
-  ListNode *l = new ListNode();
+  ListNode *l = new ListNode;
   (*l).value = x;
   (*l).next = position.current;
   (*l).previous = position.current->previous;
@@ -120,7 +120,7 @@ void List::insertBefore(int x, ListItr position)
 
 void List::insertAtTail(int x)
 {
-  ListNode *l = new ListNode();
+  ListNode *l = new ListNode;
   (*l).value = x;
   (*l).next = tail;
   (*l).previous = tail->previous;
