@@ -1,0 +1,5 @@
+//Brandon Feng yf2km  1/24/2017 lifecycle.cpp.txt
+
+Why aren't the values of the objects swapped when we swap those objects? (the Bob and Sally example)
+
+Is it unnecessary to write down prototypes in .cpp files even though we will use them in the test files?
