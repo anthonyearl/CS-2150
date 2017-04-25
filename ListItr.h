@@ -1,4 +1,4 @@
-// Brandon Feng yf2km 1/30/2017 ListItr.h
+// Brandon Feng yf2km 2/1/2017 ListItr.h
 /*
  * Filename: ListItr.h
  * Description: ListItr class definition
@@ -26,7 +26,7 @@ public:
 
 private:
     ListNode* current;		//holds the position in the list
-    friend class List;	// List class needs access to ìcurrentî
+    friend class List;	// List class needs access to ‚Äúcurrent‚Äù
     // ListNode's private data members
 };
 
